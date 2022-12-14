@@ -3,6 +3,8 @@ import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom'
 import styled from 'styled-components';
 
+import pokebola from '../../assets/pokebola.png'
+
 export const PokemonPage = () => {
 
   
@@ -56,7 +58,7 @@ export const PokemonPage = () => {
             </div>
           </div>
       }
-      <PokebolaImage src='../../assets/pokebola.png' alt="" />
+      <PokebolaImage src={pokebola} alt="" />
     </div>
   )
 }

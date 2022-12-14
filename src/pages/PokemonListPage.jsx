@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import styled from 'styled-components'
 import { PokemonCard } from '../components/pokemonPage/PokemonCard'
 import { getPokemons } from '../store/slices/pokemon/thunks'
+import pokebola from '../../assets/pokebola.png'
 
 
 export const PokemonListPage = () => {
@@ -47,7 +48,7 @@ export const PokemonListPage = () => {
                     Next page
                 </button>
             </div>
-            <PokebolaImage src='../../assets/pokebola.png' alt="" />
+            <PokebolaImage src={pokebola} alt="" />
         </Container>
     )
 }
